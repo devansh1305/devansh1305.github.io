@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       <div className="container px-4 md:px-6 flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div className="flex-1 space-y-4 text-center md:text-left animate-in slide-in-from-left duration-700">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-foreground">
             Devansh Panirwala
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
@@ -21,7 +21,7 @@ const Hero = () => {
               <Button size="lg">Get Started</Button>
             </Link>
             <Link to="contact" smooth={true} duration={500} offset={-70}>
-              <Button variant="outline" size="lg">Contact Me</Button>
+              <Button variant="outline" size="lg" className="text-foreground hover:text-foreground">Contact Me</Button>
             </Link>
           </div>
         </div>

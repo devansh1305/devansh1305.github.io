@@ -10,7 +10,7 @@ const About = () => {
           <div className="p-3 bg-primary/10 rounded-full">
             <User className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">About Me</h2>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 items-start">

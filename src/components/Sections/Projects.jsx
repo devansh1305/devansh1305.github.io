@@ -12,7 +12,7 @@ const Projects = () => {
           <div className="p-3 bg-primary/10 rounded-full">
             <Code className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">Projects</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 
+import { ModeToggle } from "@/components/ModeToggle";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,14 +63,17 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
+              <ModeToggle />
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
+            <ModeToggle />
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
+              className="ml-2"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
